@@ -13,6 +13,7 @@ namespace VideoConverter.Controllers
         {
             var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
             ffMpeg.ConvertMedia(@"C:\Users\Jaber\Videos\2017-05-20 12-14-27.flv", @"D:\video.mp4", Format.mp4);
+            ffMpeg.GetVideoThumbnail(@"C:\Users\Jaber\Videos\2017-05-20 12-14-27.flv", @"D:\video_thumbnail.jpg");
             return View();
         }
 
